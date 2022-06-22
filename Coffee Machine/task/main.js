@@ -35,18 +35,27 @@ function runAction() {
     switch (action) {
         case "buy":
             buy();
-            break;
+            return true;
         case "fill":
             fill();
-            break;
+            return true;
         case "take":
             take();
-            break;
+            return true;
+        case "remaining":
+            printMachineStatus();
+            return true;
+        case "exit":
+            return false;
     }
 }
 
 function buy() {
-    let choice = input("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino:");
+    let choice = input("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino:").trim().toLowerCase();
+
+    if (choice === "back") {
+        return;
+    }
 
     let coffeeType;
     switch (choice) {
@@ -67,7 +76,7 @@ function buy() {
 function tryBuyCoffee(coffeeType) {
     if (canMakeCoffee(coffeeType)) {
         buyCoffee(coffeeType);
-        printMachineStatus();
+        console.log(`I have enough resources, making you a coffee!`);
     }
 }
 
@@ -108,13 +117,11 @@ function fill() {
     machine.milkV += Number(milkV);
     machine.coffeeM += Number(coffeeM);
     machine.disposableCups += Number(cups);
-    printMachineStatus();
 }
 
 function take() {
     if (machine.storedMoney > 0) {
         console.log(`I gave you $${machine.storedMoney}`);
         machine.storedMoney = 0;
-        printMachineStatus();
     }
 }
