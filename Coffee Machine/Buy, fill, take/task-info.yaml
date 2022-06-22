@@ -14,7 +14,7 @@ files:
 - name: tests.py
   visible: false
   learner_created: false
-feedback_link: https://hyperskill.org/projects/220/stages/1104/implement#comment
+feedback_link: https://hyperskill.org/learn/step/17039#comment
 check_profile: hyperskill_node_javascript
 status: Unchecked
 record: -1
