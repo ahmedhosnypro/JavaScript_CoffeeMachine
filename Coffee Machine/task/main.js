@@ -16,7 +16,11 @@ let coffeeTypes = {
 
 (function () {
     printMachineStatus();
-    runAction();
+
+    let toContinue = true;
+    while (toContinue) {
+        toContinue = runAction();
+    }
 }());
 
 function printMachineStatus() {
@@ -47,6 +51,9 @@ function runAction() {
             return true;
         case "exit":
             return false;
+        default:
+            console.log("unknown command");
+            return true;
     }
 }
 

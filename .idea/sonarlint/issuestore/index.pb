@@ -33,12 +33,8 @@ i
 course-info.yaml,8\1\81db7fbbb03b3e3f063d803783ac0942e85a4031
 [
 +Coffee Machine/Making coffee/task-info.yaml,5\e\5e1810b483f2367231682f43360e054e96ca5f12
-k
-;Coffee Machine/Keeping track of the supplies/task-info.yaml,2\1\219538ecba735476f459fbbca5f304d17e680079
 c
 3Topics/Introduction to String/Theory/task-info.yaml,9\4\945ed3cfe3e62ce1d837cfee477b4024f81e4a14
-Y
-)Coffee Machine/The sandbox/task-info.yaml,7\1\71e04f4b0c3db7f1e16b9d80673d9dbc885fa86f
 j
 :Topics/Introduction to String/Theory/task-remote-info.yaml,a\d\add34ea3fbc4e1f9268525347fb14c96ad77ccde
 n

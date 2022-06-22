@@ -1,0 +1,12 @@
+type: code
+files:
+- name: main.js
+  visible: true
+  text: "function getRandom() {\n// Write your code here  \n}"
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/18848#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Wed, 22 Jun 2022 13:37:18 UTC
+record: -1
